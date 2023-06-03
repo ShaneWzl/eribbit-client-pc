@@ -1,16 +1,12 @@
 <template>
-  App <button @click="fn">点我测试</button>
+  <!-- App.vue得有一级路由 -->
+  <router-view/>
 </template>
 
 <script>
-import request from '@/utils/request.js'
+
 export default {
-  setup(){
-    const fn = () => {
-      request('member/profile' , 'get')
-    }
-    return {fn}
-  }
+  
 }
 </script>
 
